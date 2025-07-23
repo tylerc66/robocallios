@@ -1,0 +1,160 @@
+// !$*UTF8*$
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 55;
+    objects = {
+
+/* Begin PBXFileReference section */
+        AA0000010000000000000001 /* RobocallBlockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobocallBlockerApp.swift; sourceTree = "<group>"; };
+        AA0000020000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        AA0000030000000000000001 /* BlockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListViewModel.swift; sourceTree = "<group>"; };
+        AA0000040000000000000001 /* BlockListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/BlockListManager.swift; sourceTree = "<group>"; };
+        AA0000050000000000000001 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/APIKeys.swift; sourceTree = "<group>"; };
+        AA0000060000000000000001 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../CallBlockerExtension/CallDirectoryHandler.swift; sourceTree = "<group>"; };
+        AA0000070000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        AA0000080000000000000001 /* ExtensionInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ../CallBlockerExtension/Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+        AA0000100000000000000001 = {isa = PBXGroup; children = (
+                AA0000010000000000000001,
+                AA0000020000000000000001,
+                AA0000030000000000000001,
+                AA0000040000000000000001,
+                AA0000050000000000000001,
+                AA0000070000000000000001,
+            ); path = RobocallBlocker; sourceTree = "<group>"; };
+        AA0000110000000000000001 = {isa = PBXGroup; children = (
+                AA0000060000000000000001,
+                AA0000080000000000000001,
+            ); path = CallBlockerExtension; sourceTree = "<group>"; };
+        AA0000120000000000000001 = {isa = PBXGroup; children = (
+                AA0000100000000000000001,
+                AA0000110000000000000001,
+            ); sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        AA0010000000000000000001 /* RobocallBlocker */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = AA0020000000000000000001;
+            buildPhases = (
+                AA0100000000000000000001,
+                AA0101000000000000000001,
+                AA0102000000000000000001,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                AA0032000000000000000002,
+            );
+            name = RobocallBlocker;
+            productName = RobocallBlocker;
+            productReference = AA0030000000000000000001 /* RobocallBlocker.app */;
+            productType = "com.apple.product-type.application";
+        };
+        AA0011000000000000000001 /* CallBlockerExtension */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = AA0021000000000000000001;
+            buildPhases = (
+                AA0103000000000000000001,
+                AA0104000000000000000001,
+                AA0105000000000000000001,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = CallBlockerExtension;
+            productName = CallBlockerExtension;
+            productReference = AA0031000000000000000001 /* CallBlockerExtension.appex */;
+            productType = "com.apple.product-type.app-extension";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        AA0000000000000000000001 = {
+            isa = PBXProject;
+            buildConfigurationList = AA0022000000000000000001;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            mainGroup = AA0000120000000000000001;
+            productRefGroup = AA0000120000000000000001;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                AA0010000000000000000001,
+                AA0011000000000000000001,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXBuildFile section */
+        AA0200000000000000000001 /* RobocallBlockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000010000000000000001; };
+        AA0201000000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000001; };
+        AA0202000000000000000001 /* BlockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000030000000000000001; };
+        AA0203000000000000000001 /* BlockListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000040000000000000001; };
+        AA0204000000000000000001 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000050000000000000001; };
+        AA0205000000000000000001 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000060000000000000001; };
+/* End PBXBuildFile section */
+
+/* Begin PBXSourcesBuildPhase section */
+        AA0100000000000000000001 = {isa = PBXSourcesBuildPhase; files = (
+                AA0200000000000000000001,
+                AA0201000000000000000001,
+                AA0202000000000000000001,
+                AA0203000000000000000001,
+                AA0204000000000000000001,
+            ); };
+        AA0103000000000000000001 = {isa = PBXSourcesBuildPhase; files = (
+                AA0205000000000000000001,
+                AA0203000000000000000001,
+                AA0204000000000000000001,
+            ); };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+        AA0101000000000000000001 = {isa = PBXResourcesBuildPhase; files = ( ); };
+        AA0104000000000000000001 = {isa = PBXResourcesBuildPhase; files = ( ); };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        AA0102000000000000000001 = {isa = PBXFrameworksBuildPhase; files = ( ); };
+        AA0105000000000000000001 = {isa = PBXFrameworksBuildPhase; files = ( ); };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+        AA0030000000000000000001 = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = RobocallBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        AA0031000000000000000001 = {isa = PBXFileReference; lastKnownFileType = wrapper.app-extension; path = CallBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+        AA0032000000000000000002 = {
+            isa = PBXContainerItemProxy;
+            containerPortal = AA0000000000000000000001;
+            proxyType = 1;
+            remoteGlobalIDString = AA0011000000000000000001;
+            remoteInfo = CallBlockerExtension;
+        };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+        AA0033000000000000000002 = {isa = PBXTargetDependency; target = AA0011000000000000000001; targetProxy = AA0032000000000000000002; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+        AA0023000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.freshtechconcepts.robocallblocker; }; name = Debug; };
+        AA0024000000000000000001 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.freshtechconcepts.robocallblocker; }; name = Release; };
+        AA0025000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.freshtechconcepts.robocallblocker.CallBlockerExtension; }; name = Debug; };
+        AA0026000000000000000001 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.freshtechconcepts.robocallblocker.CallBlockerExtension; }; name = Release; };
+        AA0027000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+        AA0028000000000000000001 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        AA0020000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AA0023000000000000000001, AA0024000000000000000001, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        AA0021000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AA0025000000000000000001, AA0026000000000000000001, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        AA0022000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AA0027000000000000000001, AA0028000000000000000001, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+    };
+    rootObject = AA0000000000000000000001;
+}
